@@ -12,11 +12,11 @@
 
     Chrome
 
-    ![Chrome](https://raw.githubusercontent.com/DataSnowman/cite21/main/images/chromeSaveAs.png)
+    ![Chrome](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/chromeSaveAs.png)
 
     Edge
 
-    ![Edge](https://raw.githubusercontent.com/DataSnowman/cite21/main/images/edgeSaveAs.png)
+    ![Edge](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/edgeSaveAs.png)
 
     To look at the structure of the files refer to the file structure
 
