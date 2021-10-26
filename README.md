@@ -26,30 +26,30 @@
 
     * Open Power BI and click on Get data>Text/CSV
 
-            ![GetData](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/getData.png)
+         ![GetData](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/getData.png)
 
     * Click on enr20.txt and click Open
 
-            ![openText](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/openText.png)
+        ![openText](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/openText.png)
 
     * Power BI should determine that the file is Tab Delimited
 
-            ![tabDelimited](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/tabDelimited.png)
+        ![tabDelimited](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/tabDelimited.png)
 
     * Click on Transform Data
 
     * The first 6 columns should be of type Text.  Click on the CDS_CODE and ETHNIC columns and change the type to Text
 
-            ![textColumns](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/textColumns.png)
+        ![textColumns](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/textColumns.png)
 
     * The remaining colums should all be Whole Numbers
 
-            ![wholeNumberColumns](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/wholeNumberColumns.png)
+        ![wholeNumberColumns](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/wholeNumberColumns.png)
 
     * Check that the numbers are Whole numbers (Integers) and click Close & Apply
 
-            ![closeAndApply](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/closeAndApply.png)
+        ![closeAndApply](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/closeAndApply.png)
 
     * Click on the Data tab to see the data returned into Power BI
 
-            ![dataTab](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/dataTab.png)
+        ![dataTab](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/dataTab.png)
