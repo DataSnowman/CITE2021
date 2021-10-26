@@ -53,3 +53,67 @@
     * Click on the Data tab to see the data returned into Power BI
 
         ![dataTab](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/dataTab.png)
+
+    * Click on the Model tab to see the table created by the import
+
+        ![modelTab](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/modelTab.png)
+
+3) Create a new dataset with breakdown by Elementary School (K through 4), Middle School (5 through 8), and High School (9 through 12)
+
+    * Click on the Transform data button on the Model or Report tab and select Transform data
+
+        ![transformData](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/transformData.png)
+
+    * Right click on the enr20 query and select Duplicate
+
+        ![duplicate](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/duplicate.png)
+
+    * Right click on the enr20 (2) query and select Rename to change its name to schoolType
+
+         ![rename](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/rename.png)
+
+        ![schoolType](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/schoolType.png)
+
+    * With schoolType highlighted select Add Column
+
+        ![addColumn](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/addColumn.png)
+
+    * Select Custom Column and enter
+
+        New column name: `Elementary`
+
+        Custom column formula:
+
+        ```[KDGN]+[GR_1]+[GR_2]+[GR_3]+[GR_4]```
+
+        ![customElementary](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/customElementary.png)
+
+    * Click OK
+
+    * Make sure the data type for the new Elementary column is set to Whole Number
+
+        ![wholeNumberElem](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/wholeNumberElem.png)
+
+    * Select Custom Column and create two more columns:
+
+        A) Middle School
+        
+        New column name: `Middle`
+
+        Custom column formula:
+
+        ```[GR_5]+[GR_6]+[GR_7]+[GR_8]```
+
+
+        B) High School
+        
+        New column name: `High`
+
+        Custom column formula:
+
+        ```[GR_9]+[GR_10]+[GR_11]+[GR_12]```
+
+    * Make sure the data type for the new Middle and High columns are set to Whole Number
+
+
+
