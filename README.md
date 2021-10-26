@@ -142,5 +142,25 @@
 
         ![dataTabSchoolType](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/dataTabSchoolType.png)
 
+4) Add in the descriptions for Ethnic Codes
+
+    * Click on the Transform data button on the Model or Report tab and select Transform data
+
+        ![transformData](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/transformData.png)
+
+    * Click on the schoolType query and select the ETHNIC column and right click and choose Add Column From Examples
+
+        ![columnFromExample](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/columnFromExample.png)
+
+    * Look for the [Racial/ethnic designation](https://github.com/DataSnowman/CITE2021/blob/main/datasets/School-LevelEnrollment.md)
+
+    * Copy and paste the descriptions to the codes and click OK
+    
+        ![ethnicDesignation](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/ethnicDesignation.png)
+
+
+    * Name the Custom Columnn "EthnicDesignation"
+
+    * Click Close & Apply. 
 
 
