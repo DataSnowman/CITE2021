@@ -121,5 +121,26 @@
 
     * Make sure the data type for the new Middle and High columns are set to Whole Number
 
+    * Remove the ADULT Column
+
+        ![removeAdult](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/removeAdult.png)
+
+    * Remove all the Grade Columns.  Select KDGN and hold down the shift key and then select UNGR_SEC.  This will select all the columns between and including KDGN and UNGR_SEC
+
+        ![kdgn](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/kdgn.png)
+
+        ![ungrsec](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/ungrsec.png)
+
+
+    * Right click on the yellow bar and select Remove Columns
+
+        ![removeColumns](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/removeColumns.png)
+
+    * The remaining Columns should be: CDS_CODE", "COUNTY", "DISTRICT", "SCHOOL", "ETHNIC", "GENDER", "ENR_TOTAL", "Elementary", "Middle", "High"
+
+    * Click Close & Apply.  This is what it looks like in the Data tab
+
+        ![dataTabSchoolType](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/dataTabSchoolType.png)
+
 
 
