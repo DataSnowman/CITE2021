@@ -84,7 +84,9 @@
 
         Custom column formula:
 
-        ```[KDGN]+[GR_1]+[GR_2]+[GR_3]+[GR_4]```
+        ```
+        [KDGN]+[GR_1]+[GR_2]+[GR_3]+[GR_4]
+        ```
 
         ![customElementary](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/customElementary.png)
 
@@ -102,7 +104,9 @@
 
         Custom column formula:
 
-        ```[GR_5]+[GR_6]+[GR_7]+[GR_8]```
+        ```
+        [GR_5]+[GR_6]+[GR_7]+[GR_8]
+        ```
 
 
         B) High School
@@ -111,7 +115,9 @@
 
         Custom column formula:
 
-        ```[GR_9]+[GR_10]+[GR_11]+[GR_12]```
+        ```
+        [GR_9]+[GR_10]+[GR_11]+[GR_12]
+        ```
 
     * Make sure the data type for the new Middle and High columns are set to Whole Number
 
