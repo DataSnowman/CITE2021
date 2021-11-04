@@ -180,12 +180,11 @@
 
 ### Use Power BI deskop to Join County info
 
-After you clicked on Close & Apply go to the Model tab.  You should have 2 tables that look like this.  Representing the two queries in the Transform Data
+    After you clicked on Close & Apply go to the Model tab.  You should have 2 tables that look like this.  Representing the two queries in the Transform Data
 
+![twoTables](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/twoTables.png)
 
-        ![twoTables](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/twoTables.png)
-
-Lets go get some more data on the California Counties from the web to add to the model
+    Lets go get some more data on the California Counties from the web to add to the model
 
 7. Get Data from Wikipedia
 
@@ -199,8 +198,7 @@ Lets go get some more data on the California Counties from the web to add to the
     https://en.wikipedia.org/wiki/List_of_counties_in_California
     ```
 
-        ![basicWeb](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/basicWeb.png)
-
+    ![basicWeb](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/basicWeb.png)
 
 
     * Click on Anonymous and click on `Connect`
@@ -235,11 +233,9 @@ Lets go get some more data on the California Counties from the web to add to the
     * Delete the last to steps of the Applied Steps (Change Type and Split Column By Delimiter)
 
     From 
-
         ![delSteps1](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/delSteps1.png)
 
     To
-
         ![delSteps2](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/delSteps2.png)
 
     * Lets use Replace Values instead
@@ -272,7 +268,7 @@ Lets go get some more data on the California Counties from the web to add to the
 
 ### Use Power BI deskop to create a report
 
-    
+
 
 
         
