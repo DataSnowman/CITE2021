@@ -268,7 +268,10 @@
 
 ### Use Power BI deskop to create a report
 
+Now I would like you to build a report that looks like this
 
+
+![report](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/report.png)
 
 
         
