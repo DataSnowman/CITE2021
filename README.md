@@ -1,8 +1,12 @@
 # CITE2021
 
-## Power BI Desktop Transformation of Enrollment Files
+## Get -> Transform -> Model -> Report
 
-1) Download the following files using your browser:
+## Get
+
+### Use Power BI deskop to Get Enrollment Files
+
+1. Download the following files using your browser:
 
     [Download 2020–21 Enrollment](https://lakehouseworkshop.blob.core.windows.net/datasets/CaliforniaDOE/CensusDayEnrollmentbySchool/enr20.txt)
 
@@ -22,7 +26,7 @@
 
     * [File Structure-School-Level Enrollment](https://github.com/DataSnowman/CITE2021/blob/main/datasets/School-LevelEnrollment.md)
 
-2) Import the file into Power BI Desktop
+2. Import the file into Power BI Desktop
 
     * Open Power BI and click on Get data>Text/CSV
 
@@ -35,6 +39,12 @@
     * Power BI should determine that the file is Tab Delimited
 
         ![tabDelimited](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/tabDelimited.png)
+
+## Transform
+
+### Use Power BI deskop to Transform Enrollment Files
+
+3. Transform the datatypes of columns in the file
 
     * Click on Transform Data
 
@@ -50,6 +60,8 @@
 
         ![closeAndApply](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/closeAndApply.png)
 
+4. Review the Data and Model tabs
+
     * Click on the Data tab to see the data returned into Power BI
 
         ![dataTab](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/dataTab.png)
@@ -58,7 +70,7 @@
 
         ![modelTab](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/modelTab.png)
 
-3) Create a new dataset with breakdown by Elementary School (K through 4), Middle School (5 through 8), and High School (9 through 12)
+5. Transform the data by creating a new dataset with breakdown by Elementary School (K through 4), Middle School (5 through 8), and High School (9 through 12)
 
     * Click on the Transform data button on the Model or Report tab and select Transform data
 
@@ -142,7 +154,7 @@
 
         ![dataTabSchoolType](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/dataTabSchoolType.png)
 
-4) Add in the descriptions for Ethnic Codes
+6. Add in the descriptions for Ethnic Codes
 
     * Click on the Transform data button on the Model or Report tab and select Transform data
 
@@ -161,6 +173,109 @@
 
     * Name the Custom Columnn "EthnicDesignation"
 
-    * Click Close & Apply. 
+    * Click Close & Apply 
 
+
+## Model
+
+### Use Power BI deskop to Join County info
+
+After you clicked on Close & Apply go to the Model tab.  You should have 2 tables that look like this.  Representing the two queries in the Transform Data
+
+
+        ![twoTables](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/twoTables.png)
+
+Lets go get some more data on the California Counties from the web to add to the model
+
+7. Get Data from Wikipedia
+
+    * Click on Get data>Web
+
+         ![getWeb](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/getWeb.png)
+
+    * Cut and Paste the following URL (Stay with default `basic`) and click OK
+
+    ```
+    https://en.wikipedia.org/wiki/List_of_counties_in_California
+    ```
+
+        ![basicWeb](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/basicWeb.png)
+
+
+
+    * Click on Anonymous and click on `Connect`
+
+        ![connect](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/connect.png)
+
+
+    * Click on Table 2 and then Click `Transform Data`
+
+        ![table2](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/table2.png)
+
+    * Rename the Table 2 query to `County` and remove the `Changed Type` Applied Step (`{"FIPS code[5]", Int64.Type},` changed it to Integer but it should be text because it has leading zeros)
+
+        ![fips](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/fips.png)
+
+    * Select the County column, right click and select Duplicate Column
+
+        ![dup](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/dup.png)
+
+    * Rename the new column `CountyJoin` and right click and delect Split Column > By Delimiter
+
+        ![byDelimiter](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/byDelimiter.png)
+
+    * Go with `Space` and Each occurence of the delimiter and click OK 
+
+        ![space](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/space.png)
+
+    * Notice that you got a bad split for the two word county names
+
+        ![badSplit](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/badSplit.png)
+    
+    * Delete the last to steps of the Applied Steps (Change Type and Split Column By Delimiter)
+
+    From 
+
+        ![delSteps1](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/delSteps1.png)
+
+    To
+
+        ![delSteps2](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/delSteps2.png)
+
+    * Lets use Replace Values instead
+
+        ![replaceValues](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/replaceValues.png)
+
+    * Enter a space followed by County in the Value to Find box and leave the Replace with box empty.  Click OK
+
+        ![replaceCounty](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/replaceCounty.png)
+
+    * Couple last transformations.  Change the type of Population column to Whole Number and remove the Map column
+
+    * Click Close & Apply
+
+    * Go to the Model tab and drag CountyJoin in the County table on to COUNTY in the schoolType table to create a many to 1 join
+
+        ![twoTableModel](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/twoTableModel.png)
+
+    * You can also create and edit the join in Manage relationships
+
+        ![manageRel](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/manageRel.png)
+
+    * Hide the the enr20 table by clicking eye icon in the top right corner of the table
+
+        ![hide](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/hide.png)
+
+    * You are now ready to create some reports and visualizations
+
+## Report
+
+### Use Power BI deskop to create a report
+
+    
+
+
+        
+
+    
 
