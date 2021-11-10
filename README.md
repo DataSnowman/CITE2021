@@ -336,9 +336,9 @@ Save the Report and click on Publish, chose My workspace, and click Select
 
 ![publish](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/publish.png)
 
-### Login to [powerbi.microsoft.comb](https://powerbi.microsoft.com)
+### Login to [powerbi.microsoft.com](https://powerbi.microsoft.com)
 
-Login to PowerBI.com with your userid and password and open your report
+Login to powerbi.microsoft.com with your userid and password and open your report
 
 ![viewReport](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/viewReport.png)
     
