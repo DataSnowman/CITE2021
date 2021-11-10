@@ -274,7 +274,7 @@ Now I would like you to build a report that looks like this
 ![report](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/report.png)
 
 
-Two create the report lets divide it into 6 sections
+To create the report lets divide it into 6 sections
 
 ![sixSections](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/sixSections.png)
 
@@ -282,7 +282,7 @@ Section 1 looks like this:
 
 ![1map](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/1map.png)
 
-and uses the following fields:
+and uses the following visualizations and fields:
 
 ![1mapFields](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/1mapFields.png)
 
@@ -290,7 +290,7 @@ Section 2 looks like this:
 
 ![2grid](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/2grid.png)
 
-and uses the following fields:
+and uses the following visualizations and fields:
 
 ![2gridFields](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/2gridFields.png)
 
@@ -298,7 +298,7 @@ Section 3 looks like this:
 
 ![3bar](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/3bar.png)
 
-and uses the following fields:
+and uses the following visualizations and fields:
 
 ![3barFields](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/3barFields.png)
 
@@ -306,7 +306,7 @@ Section 4 looks like this:
 
 ![4grid](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/4grid.png)
 
-and uses the following fields:
+and uses the following visualizations and fields:
 
 ![4gridFields](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/4gridFields.png)
 
@@ -314,7 +314,7 @@ Section 5 looks like this:
 
 ![5bar](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/5bar.png)
 
-and uses the following fields:
+and uses the following visualizations and fields:
 
 ![5barFields](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/5barFields.png)
 
@@ -322,7 +322,7 @@ Section 6 looks like this:
 
 ![6slicer](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/6slicer.png)
 
-and uses the following fields:
+and uses the following visualizations and fields:
 
 ![6slicerFields](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/6slicerFields.png)
 
@@ -330,6 +330,16 @@ and uses the following fields:
 
 ![sections](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/sections.png)
         
+### Publish the Power BI report to powerbi.microsoft.com
 
+Save the Report and click on Publish, chose My workspace, and click Select
+
+![publish](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/publish.png)
+
+### Login to [powerbi.microsoft.comb](https://powerbi.microsoft.com)
+
+Login to PowerBI.com with your userid and password and open your report
+
+![viewReport](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/viewReport.png)
     
 
