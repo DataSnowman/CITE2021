@@ -1,4 +1,10 @@
-# CITE2021
+# CITE2021 How to get started and utilize visual dashboards using Power BI
+
+## Follow the directions below to create this report
+
+![report](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/report.png)
+
+## Slide Deck from this CITE 2021 Conference Workshop [How to get started and utilize visual dashboards using Power BI](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/report.png)
 
 ## Get -> Transform -> Model -> Report
 
