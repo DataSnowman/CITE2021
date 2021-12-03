@@ -4,7 +4,7 @@
 
 ![report](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/report.png)
 
-## Slide Deck from this CITE 2021 Conference Workshop [How to get started and utilize visual dashboards using Power BI](https://raw.githubusercontent.com/DataSnowman/CITE2021/main/images/report.png)
+## Slide Deck from this CITE 2021 Conference Workshop [How to get started and utilize visual dashboards using Power BI](https://github.com/DataSnowman/CITE2021/blob/main/deck/How%20to%20get%20started%20and%20utilize%20visual%20dashboards%20using%20Power%20BI%20for%20Azure%20Corner.pdf)
 
 ## Get -> Transform -> Model -> Report
 
